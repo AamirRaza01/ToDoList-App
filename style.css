@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f9d14f, #ff9634);
+}
+.app-card{
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto 20px;
+    padding: 30px 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+.heading h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(19, 19, 19);
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+h1 span{
+    color: #ff921d;
+}
+.heading-img img{
+    width: 55px;
+}
+.addTask{
+    width: 90%;
+    height: 38px;
+    background-color: #edeef0;
+    margin: 20px auto ;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.addTask input{
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline:none;
+    background: transparent;
+    padding: 0 15px;
+    font-size: 18px;
+    color: rgb(20, 20, 20);
+    letter-spacing: .5px;
+}
+.addTask input::placeholder{
+    font-size: 16px;
+}
+
+.addTask  button{
+    height: 100%;
+    border: none;
+    outline:none;
+    padding: 0 25px;
+    color: #fff;
+    background-color: #ff921d;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul li {
+    text-align: left;
+ 
+    width: 90%;
+    margin:0 auto  5px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px 8px 10px 40px;
+}
+
+ul li::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(./imgs/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 0;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color:#555;
+}
+ul li.checked::before{
+    background-image: url(./imgs/checked.png);
+}
+ ul li span{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+ }
+ ul li span:hover{
+    background-color: #edeef0;
+ }
+
+
+
+ /* ############################### ///////////////////// ################################## */
+
+ .container2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .quiz{
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px 20px;
+    margin: 100px 0 50px 0;
+ }
+ .btn{
+    width: 100%;
+    height: 40px;
+    border: 1.5px solid black;
+    border-radius: 4px;
+    margin: 10px 0;
+    background: white;
+    cursor: pointer;
+    transition: all .3s linear;
+    text-align: left;
+    padding: 0 10px;
+    outline: none;
+ }
+ .btn:hover{
+   background-color: rgb(41, 41, 41);
+   color: white;
+ }
+
+ .quiz h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+ }
+ .quiz h1::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    margin-bottom: 20px ;
+    color: black;
+ }
+ #question{
+    font-size: 20px;
+    
+ }
+ .next{
+    padding: 1px 15px;
+    background-color:rgb(41, 41, 41) ;
+    font-size: 16px;
+    letter-spacing: 1px;
+    /* text-align: center; */
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    border: none;
+
+ }
+.forward{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
