@@ -43,77 +43,77 @@ showData()
 
 // ########################## ########### #############################
 
-const questions = [
-    {
-        question : "What is the capital of Turkey",
-        answers : [
-            {text :"Ankara" , state : true},
-            {text :"Istanbul" , state :false },
-            {text :"Konya" , state :false },
-            {text :"Erzuzrum" , state :false }
-        ]
-    },
-    {
-        question : "WHich is the largest city in the world",
-        answers : [
-            {text :"New Delhi" , state :false },
-            {text :"New York" , state :false },
-            {text :"Tokyo" , state : true },
-            {text :"London" , state :false }
-        ]
-    },
-    {
-        question : "Who is known as the father of Algorithms",
-        answers : [
-            {text :"Albert Einstien" , state :false },
-            {text :"Al-Khwarizmi" , state :true },
-            {text :"Cauchy" , state :false },
-            {text :"Adam colins" , state :false }
-        ]
-    },
-    {
-        question : "Which city is known as the 'Fragrance capital of India'",
-        answers : [
-            {text :"Firozabad" , state :false },
-            {text :"Allahabad" , state :false },
-            {text :"Kannauj" , state :true },
-            {text :"Thanjavur" , state :false }
-        ]
-    }
-]
+// const questions = [
+//     {
+//         question : "What is the capital of Turkey",
+//         answers : [
+//             {text :"Ankara" , state : true},
+//             {text :"Istanbul" , state :false },
+//             {text :"Konya" , state :false },
+//             {text :"Erzuzrum" , state :false }
+//         ]
+//     },
+//     {
+//         question : "WHich is the largest city in the world",
+//         answers : [
+//             {text :"New Delhi" , state :false },
+//             {text :"New York" , state :false },
+//             {text :"Tokyo" , state : true },
+//             {text :"London" , state :false }
+//         ]
+//     },
+//     {
+//         question : "Who is known as the father of Algorithms",
+//         answers : [
+//             {text :"Albert Einstien" , state :false },
+//             {text :"Al-Khwarizmi" , state :true },
+//             {text :"Cauchy" , state :false },
+//             {text :"Adam colins" , state :false }
+//         ]
+//     },
+//     {
+//         question : "Which city is known as the 'Fragrance capital of India'",
+//         answers : [
+//             {text :"Firozabad" , state :false },
+//             {text :"Allahabad" , state :false },
+//             {text :"Kannauj" , state :true },
+//             {text :"Thanjavur" , state :false }
+//         ]
+//     }
+// ]
 
-const questionElement = document.getElementById("question")
-const answerElement = document.querySelector(".answers")
-const nextButton = document.querySelector(".next")
+// const questionElement = document.getElementById("question")
+// const answerElement = document.querySelector(".answers")
+// const nextButton = document.querySelector(".next")
 
-let currentScore = 0
-let currentQuestionIndex = 0;
+// let currentScore = 0
+// let currentQuestionIndex = 0;
 
-function starQuiz(){
-    currentScore = 0
-    currentQuestionIndex = 0
-    nextButton.innerHTML = "Next"
-    showQuestions()
-}
+// function starQuiz(){
+//     currentScore = 0
+//     currentQuestionIndex = 0
+//     nextButton.innerHTML = "Next"
+//     showQuestions()
+// }
 
-function showQuestions(){
-    resetState()
-    let currentQuestion = questions[currentQuestionIndex]
-    let questionNo = currentQuestionIndex + 1
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question
+// function showQuestions(){
+//     resetState()
+//     let currentQuestion = questions[currentQuestionIndex]
+//     let questionNo = currentQuestionIndex + 1
+//     questionElement.innerHTML = questionNo + ". " + currentQuestion.question
 
-    currentQuestion.answers.forEach(answers =>{
-        const button = document.createElement("button")
-        button.innerHTML = answers.text
-        button.classList.add("btn")
-        answerElement.appendChild(button)
-    })
-}
+//     currentQuestion.answers.forEach(answers =>{
+//         const button = document.createElement("button")
+//         button.innerHTML = answers.text
+//         button.classList.add("btn")
+//         answerElement.appendChild(button)
+//     })
+// }
 
-function resetState(){
-    nextButton.style.display = "none"
-    while(answerElement.firstChild){
-        answerElement.removeChild(answerElement.firstChild)
-    }
-}
-starQuiz()
+// function resetState(){
+//     nextButton.style.display = "none"
+//     while(answerElement.firstChild){
+//         answerElement.removeChild(answerElement.firstChild)
+//     }
+// }
+// starQuiz()
